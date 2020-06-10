@@ -28,7 +28,7 @@ jobs:
         node-version: 12
              
     - name: Install Surge
-      run: Install npm -g Surge
+      run: npm install --global surge
     - name: Run Surge  
       run:  Surge ./ arwebsite.surge.sh --token ${{secrets.surge_token}}
     
