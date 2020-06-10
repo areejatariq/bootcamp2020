@@ -29,6 +29,6 @@ jobs:
              
     - name: Install Surge
       run: npm install --global surge
-    - name: Run Surge  
-      run:  Surge ./ arwebsite.surge.sh --token ${{secrets.surge_token}}
+    - name: Run surge  
+      run:  surge ./ arwebsite.surge.sh --token ${{secrets.surge_token}}
     
